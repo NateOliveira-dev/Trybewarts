@@ -19,3 +19,13 @@ agree.addEventListener('click', () => {
     submit.disabled = false;
   }
 });
+
+const textarea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+
+function decrement() {
+  const textLength = textarea.value.length;
+  counter.innerHTML = 500 - textLength;
+}
+
+textarea.addEventListener('keyup', decrement);
