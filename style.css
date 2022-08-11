@@ -1,0 +1,8 @@
+#secao-input-familia {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+}
