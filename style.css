@@ -1,19 +1,59 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+body {
+  background-color: #667A75;
 }
 
 header {
   display: flex;
-  background-color: rgb(50, 167, 145);
+}
+
+.header, .navbar, .navbar-expand-lg, .bg-light {
+  background-color: rgb(50, 167, 145) !important;
+}
+
+.navbar-expand-lg{
+  justify-content: space-between;
+}
+
+.form-floating, .mb-3 {
+  margin: 0 5px;
+}
+
+#floatingInput {
+  background-color: #D0FBF0;
+}
+
+#floatingPassword {
+  background-color: #D0FBF0;
+}
+
+.entrar-btn {
+  display: flex;
+  margin: 0 5px;
+  align-items: center;
+}
+
+.trybewarts-header-logo {
+  width: 50px;
+  margin: 10px 25px;
 }
 
 .trybewarts-login {
   display: flex;
 }
 
+.trybewarts-login label {
+  
+}
+
 main {
   display: flex;
+  flex-direction: column;
 }
 
 main form {
@@ -28,7 +68,9 @@ main form {
 }
 
 #trybewarts-forms-logo {
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
 }
 
 #secao-input-familia {
@@ -41,3 +83,4 @@ textarea {
 }
 
 /* criando branch do nate */
+
