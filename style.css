@@ -5,31 +5,14 @@
 }
 
 body {
-  background-color: #667A75;
+  background-color: #212529;
 }
 
 header {
   display: flex;
-}
-
-.header, .navbar, .navbar-expand-lg, .bg-light {
-  background-color: rgb(50, 167, 145) !important;
-}
-
-.navbar-expand-lg{
   justify-content: space-between;
-}
-
-.form-floating, .mb-3 {
-  margin: 0 5px;
-}
-
-#floatingInput {
-  background-color: #D0FBF0;
-}
-
-#floatingPassword {
-  background-color: #D0FBF0;
+  align-items: center;
+  background-color: rgb(50, 167, 145);
 }
 
 .entrar-btn {
@@ -39,16 +22,18 @@ header {
 }
 
 .trybewarts-header-logo {
-  width: 50px;
+  width: 75px;
   margin: 10px 25px;
 }
 
 .trybewarts-login {
   display: flex;
+  height: 100%;
+  margin: 10px;
 }
 
 .trybewarts-login label {
-  
+  margin: 10px;
 }
 
 main {
