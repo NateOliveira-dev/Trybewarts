@@ -18,6 +18,8 @@ const agree = document.getElementById('agreement');
 agree.addEventListener('click', () => {
   if (agree.checked) {
     submit.disabled = false;
+  } else {
+    submit.disabled = true;
   }
 });
 
@@ -36,26 +38,26 @@ function nameLastname() {
   const lastName = document.getElementById('input-lastname').value;
   const infos = document.getElementById('infos');
 
-  infos.innerText = `${firstName} ${lastName}`;
+  infos.innerText = `Nome: ${firstName} ${lastName}`;
 }
 
 function getEmail() {
   const email = document.getElementById('input-email').value;
   const emailValue = document.getElementById('email');
 
-  emailValue.innerText = `${email}`;
+  emailValue.innerText = `E-mail: ${email}`;
 }
 
 function getHouse() {
   const house = document.getElementById('house').value;
   const houseValue = document.getElementById('casa');
-  houseValue.innerText = `${house}`;
+  houseValue.innerText = `Casa: ${house}`;
 }
 
 function getFamily() {
   const form = document.getElementById(a);
   const family = document.getElementById('familia');
-  family.innerText = form.family.value;
+  family.innerText = `Família: ${form.family.value}`;
 }
 
 function getSubject() {
@@ -68,27 +70,41 @@ function getSubject() {
       paragraph += `${subject[i].value}, `;
     }
   }
-  subjectValue.innerText = paragraph;
-  paragraph = paragraph.substring(0, paragraph.length - 1);
+  paragraph = `Matérias: ${paragraph}`;
+  let paragraph2 = paragraph.substring(0, paragraph.length - 2);
+  subjectValue.innerText = paragraph2;
 }
 
 function getEvaluation() {
   const form = document.getElementById(a);
   const evaluationValue = document.getElementById('avaliacao');
 
-  evaluationValue.innerText = form.rate.value;
+  evaluationValue.innerText = `Avaliação: ${form.rate.value}`;
 }
 
 function getComment() {
   const textareaValue = document.getElementById('textarea').value;
   const commentValue = document.getElementById('comentario');
 
-  commentValue.innerText = `${textareaValue}`;
+  commentValue.innerText = `Obvservações: ${textareaValue}`;
 }
+
+const hamburguer = document.getElementsByClassName('hamburger-lines')[0];
+const menuItems = document.getElementsByClassName('menu-items')[0];
+
+hamburguer.addEventListener('click', () => {
+if(menuItems.style.display === 'none'){
+  menuItems.style.display = 'flex';
+} else {
+  menuItems.style.display = 'none';
+}
+})
 
 submit.addEventListener('click', (event) => {
   const form = document.getElementById(a);
+  const formData = document.getElementById('form-data')
   form.style.display = 'none';
+  formData.style.display = 'block';
   event.preventDefault();
   nameLastname();
   getFamily();
