@@ -10,50 +10,50 @@
     <link rel="stylesheet" href="style.css" />
     <script src="./jquery-3.6.0.min.js"></script>
     <script src="./bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
-    <title>TrybeWarts</title>
+    <script src="https://kit.fontawesome.com/51d170507d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
-        <img src="images/trybewarts-header-logo.svg" alt="icon-trybe" class="trybewarts-header-logo" width="60px"/>
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <img src="images/trybewarts-header-logo.svg" alt="icon-trybe" class="trybewarts-header-logo" width="60px" />
+        <h1 id="trybewarts-header-title"></i>TrybeWarts <i class="fa-solid fa-wand-sparkles"></i></h1>
         <form class="trybewarts-login">
-                <input type="email" name="email" placeholder="Email" id="input-login"/>
-                <input type="password" name="password" placeholder="Senha" id="input-senha"/>
-                <button type="submit" id="btn-entrar">Entrar</button>
+            <input type="email" name="email" placeholder="Email" id="input-login" />
+            <input type="password" name="password" placeholder="Senha" id="input-senha" />
+            <button type="submit" id="btn-entrar">Entrar <i class="fa-solid fa-door-open"></i></button>
         </form>
-          <div class="hamburger-lines">
+        <div class="hamburger-lines">
             <span class="line line1"></span>
             <span class="line line2"></span>
             <span class="line line3"></span>
-          </div>
+        </div>
         <div class="menu-items">
-          <input type="email" name="email" placeholder="Email" id="input-login"/>
-          <input type="password" name="password" placeholder="Senha" id="input-senha"/>
-          <button type="submit" id="btn-entrar">Entrar</button>
+            <input type="email" name="email" placeholder="Email" id="input-login" />
+            <input type="password" name="password" placeholder="Senha" id="input-senha" />
+            <button type="submit" id="btn-entrar">Entrar</button>
         </div>
     </header>
     <main>
         <form action="" id="evaluation-form">
-          <div id="secao-infos-totais">
-            <section id="secao-nome-sobrenome">
-              <input type="text" id="input-name" placeholder="Nome" />
-              <input type="text" id="input-lastname" placeholder="Sobrenome" />
-            </section>
-            <section id="secao-email-casa">
-              <input type="email" name="" id="input-email" placeholder="Email" />
+            <div id="secao-infos-totais">
+                <section id="secao-nome-sobrenome">
+                    <input type="text" id="input-name" placeholder="Nome" />
+                    <input type="text" id="input-lastname" placeholder="Sobrenome" />
+                </section>
+                <section id="secao-email-casa">
+                    <input type="email" name="" id="input-email" placeholder="Email" />
                     <select name="" id="house">
                         <option value="Gitnória" id="gitnoria-house" class="houses">Gitnória</option>
                         <option value="Reactpuff" id="reactpuff-house" class="houses">Reactpuff</option>
                         <option value="Corvinode" id="corvinode-house" class="houses">Corvinode</option>
                         <option value="Pytherina" id="pytherina-house" class="houses">Pytherina</option>
                     </select>
-            </section>
-            <hr>
-          </div>
+                </section>
+                <hr>
+            </div>
             <div id="total-checks">
                 <section id="secao-input-familia">
-                    <label for="" id="label-family">Qual sua família?</label>
+                    <label for="" id="label-family">Qual sua família? <i class="fa-solid fa-hat-wizard"></i></label>
                     <label for="Frontend">
                         <input type="radio" id="Frontend" value="Frontend" name="family" />
                         Frontend
@@ -69,7 +69,7 @@
                 </section>
                 <div id="checks-conteudos">
                     <label for="" id="label-content">
-                        Qual conteúdo você está com mais vontade de aprender?
+                        Qual conteúdo você está com mais vontade de aprender? <i class="fa-solid fa-graduation-cap"></i>
                     </label>
                     <section id="secao-check-conteudo-1">
                         <label for="hofs">
@@ -103,7 +103,7 @@
             </div>
             <hr>
             <section id="secao-avaliacao">
-                <label id="label-rate"> Como você avalia a Trybewarts? </label>
+                <label id="label-rate"> Como você avalia a Trybewarts? <i class="fa-solid fa-broom-ball"></i></label>
                 <div id="inputs-avaliacao">
                     <label for="1">
                         <input type="radio" id="1" name="rate" value="1" />
@@ -148,46 +148,49 @@
                 </div>
             </section>
             <section id="secao-comentario">
-                <label class="textarea" for="">Deixe seu comentário:</label>
+                <label class="textarea" for="">Deixe seu comentário: <i class="fa-solid fa-comment"></i></label>
                 <textarea name="" id="textarea" cols="60" rows="5" maxlength="500"></textarea>
                 <p id="counter">500</p>
             </section>
             <section id="secao-concorda-enviar">
                 <label for="agreement" id="label-infos">
-                    Você concorda com o uso das informações acima?
-                    <input type="checkbox" id="agreement" />
+                    Você concorda com o uso das informações acima? 
+                    <input type="checkbox" id="agreement" /> <i class="fa-solid fa-handshake"></i>
                 </label>
-                <button type="submit" id="submit-btn" disabled>Enviar</button>
+                <button type="submit" id="submit-btn" disabled>Enviar <i id="varinha" class="fa-solid fa-wand-sparkles"></i></button>
             </section>
         </form>
         <div id="form-data">
-          <div>
-            <p id="infos"></p>
-          </div>
-          <div>
-            <p id="email"></p>
-          </div>
-          <div>
-            <p id="casa"></p>
-          </div>
-          <div id="">
-            <p id="familia"></p>
-          </div>
-          <div>
-            <p id="conteudo"></p>
-          </div>
-          <div>
-            <p id="avaliacao"></p>
-          </div>
-          <div>
-            <p id="comentario"></p>
-          </div>
+            <div>
+                <p id="infos"></p>
+            </div>
+            <div>
+                <p id="email"></p>
+            </div>
+            <div>
+                <p id="casa"></p>
+            </div>
+            <div id="">
+                <p id="familia"></p>
+            </div>
+            <div>
+                <p id="conteudo"></p>
+            </div>
+            <div>
+                <p id="avaliacao"></p>
+            </div>
+            <div>
+                <p id="comentario"></p>
+            </div>
         </div>
         <img src="./images/trybewarts-colored.svg" alt="Trybewarts-Logo" id="trybewarts-forms-logo" />
     </main>
-    <footer> <p>
-      Direitos reservados à Trybewarts©
-    </p> </footer> 
-  </body>
-  <script src="./script.js"></script>
+    <footer>
+        <p>
+            Direitos reservados à Trybewarts©
+        </p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
 </html>

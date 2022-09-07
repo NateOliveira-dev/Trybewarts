@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Cinzel', serif;
 }
 
 body {
-  background-color: #212529;
+  background-color: rgba( 49, 51, 49, 100%);
+  color: rgba( 87, 165, 146, 100%);
 }
 
 header {
@@ -34,15 +37,14 @@ header {
 }
 
 h1{
-  font-family: 'Reggae One', cursive;
+  font-family: 'Cinzel', serif;
   font-size: 40px;
-  letter-spacing: 5px;
   align-self: center;
   color: white;
   text-shadow: -1px 0 rgb(226, 85, 30),
-0 1.5px rgb(226, 85, 30),
-1.5px 0 rgb(226, 85, 30),
-0 -1.5px rgb(226, 85, 30); 
+    0 1.5px rgb(226, 85, 30),
+    1.5px 0 rgb(226, 85, 30),
+    0 -1.5px rgb(226, 85, 30); 
 }
 
 .entrar-btn {
@@ -64,7 +66,7 @@ h1{
 main {
   display: flex;
   justify-content: space-evenly;
-  background-color: cornsilk;
+  background-color: rgba( 49, 51, 49, 100%);
 }
 
 main form {
@@ -91,7 +93,7 @@ main form {
   display: flex;
   flex-direction: column;
   align-self: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 
@@ -126,7 +128,7 @@ footer {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: rgba(228, 228, 64, 0.651);
+  background-color: rgba( 87, 165, 146, 100%);
 }
 
 footer p {
@@ -138,8 +140,8 @@ footer p {
 }
 
 input {
-border-radius: 5px;
-border: none;
+  border-radius: 5px;
+  border: none;
 }
 
 select {
@@ -165,16 +167,18 @@ select {
   flex-direction: column;
   justify-content: center;
   width: 220px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #label-content {
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 
 #label-family {
   margin-bottom: 9px;
+  font-size: 16px;
 }
 
 #label-content {
@@ -230,8 +234,8 @@ hr {
 }
 
 #house {
-flex-grow: 1;
-height: 22px;
+  flex-grow: 1;
+  height: 22px;
 }
 
 #secao-avaliacao {
@@ -241,6 +245,10 @@ height: 22px;
 
 #secao-avaliacao label {
   font-size: 18px;
+}
+
+#label-rate {
+  font-size: 16px;
 }
 
 #counter {
@@ -377,6 +385,12 @@ height: 22px;
     cursor: pointer;
   }
 
+}
+
+#varinha {
+  font-size: 12px;
+  margin: auto;
+  margin-left: 4px;
 }
 
 @media screen and (max-width: 750px) {
